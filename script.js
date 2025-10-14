@@ -5,7 +5,7 @@ for (let i = 0; i < 20; i++) {
   const bubble = document.createElement('div');
   bubble.classList.add('bubble');
   const img = document.createElement('img');
-  img.src = 'goat-icon.png'; // icon con dê nhỏ
+  img.src = '🐐'; // icon con dê nhỏ
   bubble.appendChild(img);
 
   const size = Math.random() * 30 + 20;
@@ -17,3 +17,4 @@ for (let i = 0; i < 20; i++) {
 
   bubblesContainer.appendChild(bubble);
 }
+
