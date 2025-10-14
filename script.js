@@ -5,10 +5,14 @@ for (let i = 0; i < 20; i++) {
   const bubble = document.createElement('div');
   bubble.classList.add('bubble');
   const img = document.createElement('img');
-  img.src = 'DALL·E 2025-02-11 19.58.03 - A chibi-style goat wearing black sunglasses, pointing in one direction with one hoof. The goat has large expressive eyes behind the sunglasses, a smal.webp'; // icon con dê
+
+  // Đường dẫn tương đối ổn định trên GitHub Pages
+  img.src = './assets/goat.png';  
+
+  img.alt = "goat bubble";
   bubble.appendChild(img);
 
-  // Random vị trí, kích thước, tốc độ
+  // Tạo kích thước và hiệu ứng ngẫu nhiên
   const size = Math.random() * 30 + 20;
   bubble.style.width = `${size}px`;
   bubble.style.height = `${size}px`;
@@ -18,5 +22,3 @@ for (let i = 0; i < 20; i++) {
 
   bubblesContainer.appendChild(bubble);
 }
-
-
