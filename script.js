@@ -5,14 +5,9 @@ for (let i = 0; i < 20; i++) {
   const bubble = document.createElement('div');
   bubble.classList.add('bubble');
   const img = document.createElement('img');
-
-  // Đường dẫn tương đối ổn định trên GitHub Pages
-  img.src = '🐐';  
-
-  img.alt = "goat bubble";
+  img.src = 'goat-icon.png'; // icon con dê nhỏ
   bubble.appendChild(img);
 
-  // Tạo kích thước và hiệu ứng ngẫu nhiên
   const size = Math.random() * 30 + 20;
   bubble.style.width = `${size}px`;
   bubble.style.height = `${size}px`;
@@ -22,5 +17,3 @@ for (let i = 0; i < 20; i++) {
 
   bubblesContainer.appendChild(bubble);
 }
-
-
