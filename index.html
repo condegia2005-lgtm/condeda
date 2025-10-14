@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Con Dê Dà </title>
+
+
+  <!-- Font chữ -->
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@400;600&family=Patrick+Hand&family=Kalam:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Nhạc nền -->
+  <iframe
+    id="bg-music"
+    width="0" height="0"
+    src="C:\Users\ADMIN\.vscode\Nhong tap code\Untitled video - Made with Clipchamp.mp4"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+  ></iframe>
+s
+  <!-- Hiệu ứng dê bay -->
+  <div class="bubbles"></div>
+
+  <div class="container">
+    <img src="file:///C:/Users/ADMIN/.vscode/Nhong%20tap%20code/DALL%C2%B7E%202025-02-11%2020.01.18%20-%20A%20chibi-style%20goat%20wearing%20black%20sunglasses,%20pointing%20in%20one%20direction%20with%20one%20hoof%20while%20holding%20a%20Sheriff%20revolver%20from%20Valorant%20in%20the%20other%20hoof.webp" alt="Avatar" class="avatar" />
+    <h1 id="title" class="meadow">Con Dê Dà 🐐</h1>
+    <p id="desc" class="desc sparkle">
+      làm content vui vẻ - tạo video để dành kỉ niệm cùng bạn bè
+    </p>
+
+    <div class="links">
+      <a href="https://www.youtube.com/@DeGiaCon" target="_blank" class="btn youtube">
+        <i class="fab fa-youtube"></i> YouTube
+      </a>
+      <a href="https://www.tiktok.com/@degiacon" target="_blank" class="btn tiktok">
+        <i class="fab fa-tiktok"></i> TikTok
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<audio id="bgmusic" loop>
+  <source src="vfile:///C:/Users/ADMIN/.vscode/Nhong%20tap%20code/Untitled%20video%20-%20Made%20with%20Clipchamp%20(1).mp4" type="audio/mp4">
+</audio>
+
+<script>
+document.body.addEventListener('click', function () {
+  const music = document.getElementById('bgmusic');
+  if (music.paused) {
+    music.play();
+  }
+}, { once: true });
+</script>
