@@ -7,7 +7,7 @@ for (let i = 0; i < 25; i++) {
 
   // tạo ảnh dê PNG
   const goat = document.createElement('img');
-  goat.src = './assets/image.png'; // 🐐 ảnh con dê của bạn
+  goat.src = './assets/images.png'; // 🐐 ảnh con dê của bạn
   goat.alt = 'goat bubble';
   goat.classList.add('goat-icon');
 
@@ -23,3 +23,4 @@ for (let i = 0; i < 25; i++) {
   bubble.appendChild(goat);
   bubblesContainer.appendChild(bubble);
 }
+
