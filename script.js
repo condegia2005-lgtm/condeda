@@ -5,7 +5,7 @@ for (let i = 0; i < 20; i++) {
   const bubble = document.createElement('div');
   bubble.classList.add('bubble');
   const img = document.createElement('img');
-  img.src = 'file:///C:/Users/ADMIN/.vscode/Nhong%20tap%20code/DALL_E_2025-02-11_20.01.18_-_A_chibi-style_goat_wearing_black_sunglasses__pointing_in_one_direction_with_one_hoof_while_holding_a_Sheriff_revolver_from_Valorant_in_the_other_hoof-removebg-preview.png'; // icon con dê
+  img.src = 'DALL_E_2025-02-11_20.01.18_-_A_chibi-style_goat_wearing_black_sunglasses__pointing_in_one_direction_with_one_hoof_while_holding_a_Sheriff_revolver_from_Valorant_in_the_other_hoof-removebg-preview.png'; // icon con dê
   bubble.appendChild(img);
 
   // Random vị trí, kích thước, tốc độ
@@ -18,3 +18,4 @@ for (let i = 0; i < 20; i++) {
 
   bubblesContainer.appendChild(bubble);
 }
+
