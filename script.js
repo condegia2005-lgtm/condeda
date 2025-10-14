@@ -6,14 +6,14 @@ for (let i = 0; i < 20; i++) {
   bubble.classList.add('bubble');
   const img = document.createElement('img');
 
-const img = document.createElement('span');
-img.textContent = '🐐';
-img.style.fontSize = `${size}px`;
-bubble.appendChild(img);
+  // Đường dẫn tương đối ổn định trên GitHub Pages
+  img.src = './assets/goat.png';  
 
+  img.alt = "goat bubble";
+  bubble.appendChild(img);
 
   // Tạo kích thước và hiệu ứng ngẫu nhiên
-  const size = Math.random() * 50 + 40;
+  const size = Math.random() * 30 + 20;
   bubble.style.width = `${size}px`;
   bubble.style.height = `${size}px`;
   bubble.style.left = `${Math.random() * 100}%`;
@@ -22,5 +22,3 @@ bubble.appendChild(img);
 
   bubblesContainer.appendChild(bubble);
 }
-
-
