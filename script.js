@@ -9,7 +9,7 @@ for (let i = 0; i < 25; i++) {
   const goat = document.createElement('img');
   goat.src = './assets/images.png'; // 🐐 ảnh con dê của bạn
   goat.alt = 'goat bubble';
-  goat.classList.add('goat-icon');
+  goat.classList.add('images.png');
 
   const size = Math.random() * 40 + 20; // kích thước ngẫu nhiên
   goat.style.width = `${size}px`;
@@ -23,4 +23,5 @@ for (let i = 0; i < 25; i++) {
   bubble.appendChild(goat);
   bubblesContainer.appendChild(bubble);
 }
+
 
