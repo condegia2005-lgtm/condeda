@@ -99,49 +99,45 @@ body {
 }
 
 /* Hiệu ứng dê bay */
+/* Vùng chứa bong bóng */
 .bubbles {
   position: absolute;
   width: 100%;
   height: 100%;
   overflow: hidden;
-  z-index: 0;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Đặt thấp hơn nội dung chính */
+  pointer-events: none; /* không cản click */
 }
+
+/* Bong bóng dê */
 .bubble {
   position: absolute;
-  bottom: -100px;
-  width: 40px;
-  height: 40px;
-  animation: rise 12s infinite ease-in;
-  opacity: 0.8;
-}
-.bubble img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-@keyframes rise {
-  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
-  100% { transform: translateY(-120vh) rotate(360deg); opacity: 0; }
-}
-.bubble {
-  position: absolute;
-  bottom: -50px;
+  bottom: -60px;
   animation: floatUp 12s ease-in infinite;
 }
 
-/* Lượn sóng khi bay lên */
+/* Dê nhỏ */
+.goat-icon {
+  display: inline-block;
+  text-shadow: 0 0 5px #fff, 0 0 10px #aaffff;
+  filter: drop-shadow(0 0 4px #ffffff);
+}
+
+/* Hiệu ứng bay lượn sóng */
 @keyframes floatUp {
   0% {
     transform: translateY(0) translateX(0) rotate(0deg);
   }
   25% {
-    transform: translateY(-25vh) translateX(10px) rotate(10deg);
+    transform: translateY(-25vh) translateX(15px) rotate(15deg);
   }
   50% {
-    transform: translateY(-50vh) translateX(-10px) rotate(-10deg);
+    transform: translateY(-50vh) translateX(-15px) rotate(-10deg);
   }
   75% {
-    transform: translateY(-75vh) translateX(15px) rotate(5deg);
+    transform: translateY(-75vh) translateX(10px) rotate(5deg);
   }
   100% {
     transform: translateY(-110vh) translateX(-10px) rotate(-5deg);
@@ -189,5 +185,6 @@ body {
   font-size: 22px;
   vertical-align: middle;
 }
+
 
 
