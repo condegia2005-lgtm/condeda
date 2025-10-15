@@ -9,7 +9,18 @@
 </head>
 <body>
   <!-- Nhạc nền -->
-  <audio id="bg-music" src="Untitled video - Made with Clipchamp.m4a" autoplay loop></audio>
+  <audio id="bg-music" src="./Untitled video - Made with Clipchamp.m4a" loop></audio>
+<button id="play-btn">🎶</button>
+
+<script>
+  const music = document.getElementById('bg-music');
+  const playBtn = document.getElementById('play-btn');
+
+  playBtn.addEventListener('click', () => {
+    music.play();
+    playBtn.style.display = 'none'; // Ẩn nút sau khi bật
+  });
+</script>
 
   <!-- Background -->
   <div class="background"></div>
@@ -22,7 +33,7 @@
     <img src="DALL·E 2025-02-11 20.01.18 - A chibi-style goat wearing black sunglasses, pointing in one direction with one hoof while holding a Sheriff revolver from Valorant in the other hoof.webp" 
          alt="Avatar" class="avatar" />
 
-    <h1 class="title">Con Dê Dà</h1>
+    <h1 class="title">Con Dê Dà 🐐</h1>
     <p class="description">làm content vui vẻ - tạo video để dành kỉ niệm cùng bạn bè</p>
 
     <div class="links">
@@ -34,4 +45,5 @@
   <script src="./script.js"></script>
 </body>
 </html>
+
 
