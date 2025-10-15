@@ -7,8 +7,8 @@ for (let i = 0; i < 25; i++) {
 
   // tạo ảnh dê PNG
   const goat = document.createElement('img');
-  goat.src = './assets/images.png'; // 🐐 ảnh con dê của bạn
-  goat.classList.add('images.png');
+  goat.src = './assets/DALL·E 2025-02-11 19.58.03 - A chibi-style goat wearing black sunglasses, pointing in one direction with one hoof. The goat has large expressive eyes behind the sunglasses, a smal.webp'; // 🐐 ảnh con dê của bạn
+  goat.classList.add('DALL·E 2025-02-11 19.58.03 - A chibi-style goat wearing black sunglasses, pointing in one direction with one hoof. The goat has large expressive eyes behind the sunglasses, a smal.webp');
 
   const size = Math.random() * 40 + 20; // kích thước ngẫu nhiên
   goat.style.width = `${size}px`;
@@ -22,6 +22,7 @@ for (let i = 0; i < 25; i++) {
   bubble.appendChild(goat);
   bubblesContainer.appendChild(bubble);
 }
+
 
 
 
