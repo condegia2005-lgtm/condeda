@@ -7,7 +7,7 @@ for (let i = 0; i < 25; i++) {
 
   // Tạo ảnh dê bong bóng
   const goat = document.createElement('img');
-  goat.src = './DALL_E_2025-02-11_20.01.18_-_A_chibi-style_goat_wearing_black_sunglasses__pointing_in_one_direction_with_one_hoof_while_holding_a_Sheriff_revolver_from_Valorant_in_the_other_hoof-removebg-preview.png';
+  goat.src = 'DALL_E_2025-02-11_20.01.18_-_A_chibi-style_goat_wearing_black_sunglasses__pointing_in_one_direction_with_one_hoof_while_holding_a_Sheriff_revolver_from_Valorant_in_the_other_hoof-removebg-preview.png';
   goat.alt = 'Goat bubble';
   goat.classList.add('goat-icon');
 
@@ -23,3 +23,4 @@ for (let i = 0; i < 25; i++) {
   bubble.appendChild(goat);
   bubblesContainer.appendChild(bubble);
 }
+
